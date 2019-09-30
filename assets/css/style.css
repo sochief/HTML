@@ -171,3 +171,43 @@ ul.menu li a:hover/*псевдокласс!*/{ /*при наведениии н�
 .sidebar .rating_sidebar{
     float: right;
 }
+.content{
+    text-align: left;
+    width: 620px;
+    padding: 0 0 0 5px;
+    float: left;
+}
+.content a{
+    text-decoration: none;
+}
+.films_block{
+    margin-bottom: 5%;
+}
+.films_block img{
+    border-radius: 5px;
+    border: solid 5px #dad7d5d;
+}
+.footer{
+    width: 100%;
+    height: 100%;
+    padding: 28px 0 5px 0;
+    text-align: center; /*Позиционирование футера по центру*/
+    background-color: darkslateblue;
+    color: #a8aa94;
+    margin-left: 0px;
+    margin-right: 0px;
+    min-width: 900px;
+}
+
+.footer a{
+    color: #a8aa94;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.footer p{
+    padding: 0 0 10px 0;
+
+}
