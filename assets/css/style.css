@@ -114,6 +114,9 @@ ul.menu li.selected a {
 ul.menu li a:hover {
     color: #e4ec04;
 }
+hr{
+    border: solid 1px #f3f3f3;
+}
 
 ul.menu li a {
     font: normal 100% 'trebuchet ms',sans-serif;
@@ -185,7 +188,11 @@ ul.menu li a:hover/*псевдокласс!*/{ /*при наведениии н�
 }
 .films_block img{
     border-radius: 5px;
-    border: solid 5px #dad7d5d;
+    border: solid 5px #dad7d5;
+    width: 22%;
+}
+.post_content .posts{
+    font-size: 0.8em;
 }
 .footer{
     width: 100%;
