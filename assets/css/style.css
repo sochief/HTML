@@ -1,50 +1,59 @@
-* /*звездочка обозначает, что мы задаем свойства абсолютно всем элементам, хэдэр, футер и тд*/{
+* {
     margin: 0;
     padding: 0;
-}/*убираем абсолютно все отступы*/
-body{
+}
+
+body {
     font-size: 1.2em;
     background-color: #fff;
     color: #555;
 }
+
 p {
     padding: 0 0 20px 0;
     line-height: 1.7em;
 }
-input[type="text"], input[type="password"],input[type="search"]{
+
+input[type="text"], input[type="password"], input[type="search"] {
     color: #5d5d5d;
     width: 60%;
     padding: 8px;
-
 }
-input,textarea{
+
+input, textarea {
     outline: none;
     border: none;
-    border: solid 1px f2f2f2;
-
+    border: solid 1px #f2f2f2;
 }
- h1,h2{
-     font: normal 170% 'century gothic', arial;
-     margin: 0 0 15px 0;
-     padding: 15px 0 5px 0;
-     color: #000;
- }
- h2{
-     font-size: 140%;
- }
- a,a :hover{
-     outline: none;
-     text-decoration: underline;
-     color: #aeb002;
- }
- ul{
-     margin: 2px 0 22px 17px;
- }
- ul li{
-     margin: 0 0 6px 0;
-     padding: 0 0 4px 5px;
-     line-height: 1.5em;
- }
+
+h1, h2 {
+    font: normal 170% 'century gothic', arial;
+    margin: 0 0 15px 0;
+    padding: 15px 0 5px 0;
+    color: #000;
+}
+
+h2 {
+    font-size: 140%;
+}
+
+a, a:hover {
+    outline: none;
+    text-decoration: underline;
+    color: #aeb002;
+}
+
+ul {
+    margin: 2px 0 22px 17px;
+}
+
+ul li {
+    margin: 0 0 6px 0;
+    padding: 0 0 4px 5px;
+    line-height: 1.5em;
+}
+
+
 .header {
     background-color: darkslateblue;
     height: 177px;
@@ -88,14 +97,14 @@ input,textarea{
 }
 
 ul.menu {
-    float: right;/*прижать элемент к правому краю*/
+    float: right;
 }
 
 ul.menu li {
     float: left;
     padding: 0 0 0 9px;
-    list-style: none;/*мы не хотим видеть точки перед списком*/
-    margin: 1px 2px 0 0;/*внешний отступ*/
+    list-style: none;
+    margin: 1px 2px 0 0;
 }
 
 ul.menu li a {
@@ -114,113 +123,181 @@ ul.menu li.selected a {
 ul.menu li a:hover {
     color: #e4ec04;
 }
-hr{
+
+hr {
     border: solid 1px #f3f3f3;
 }
 
-ul.menu li a {
-    font: normal 100% 'trebuchet ms',sans-serif;
-    display: block;/*обозначает, что мы хотим не блочный элемент в блочный*/
-    height: 20px;
-    padding: 6px 35px 5px 28px;
-    color: #fff;
-    text-decoration: none;
-}
-ul.menu li.selected a{
-    color: #aeb002;
-}
-ul.menu li a:hover/*псевдокласс!*/{ /*при наведениии на ссылку он будет менять цвет*/
-    color:#e4ec04;
-}
-.site_content{
+.site_content {
     width: 880px;
-    overflow: hidden;
+    overflow:hidden;
     margin: 20px auto 0 auto;
     background-color: white;
 }
-.sidebar_container{
-    float: right;
+
+.sidebar_container {
+    float: right;;
     width: 224px;
 }
-.sidebar{
+
+.sidebar {
     float: right;
     width: 222px;
     padding: 5%;
     margin: 0 0 16px 0;
-    border: solid 1px #f2f2f2;/*Рамка, солид --  тип рамки толщина линии -- 1 пиксель, и цвет линии*/
-    border-radius: 5px;/*смягчаем углы*/
+    border: solid 1px #f2f2f2;
+    border-radius: 5px;
     background-color: #f9f9f9;
 }
-.btn{
+
+.btn {
     padding: 8px;
     background-color: white;
-    cursor: pointer;
+    cursor:pointer;
 }
+
 .sidebar h2 {
     color: #136cb2;
 }
-.lables_passref_text{
+
+.lables_passreg_text {
     font-size: 0.7em;
     margin-top: 3%;
     margin-left: 2%;
 }
-.sidebar ul{
+
+.sidebar ul {
     margin: 0;
 }
-.sidebar ul li{
+
+.sidebar ul li {
     list-style-type: none;
     margin: 0 0 0 0;
 }
-.sidebar .rating_sidebar{
+
+.sidebar .rating_sidebar {
     float: right;
 }
-.content{
+
+
+.content {
     text-align: left;
     width: 620px;
     padding: 0 0 0 5px;
     float: left;
 }
-.content a{
+
+.content a {
     text-decoration: none;
 }
-.films_block{
+
+.films_block {
     margin-bottom: 5%;
 }
-.films_block img{
+
+.films_block img {
     border-radius: 5px;
     border: solid 5px #dad7d5;
     width: 22%;
 }
-.post_content .posts{
+
+.posts .posts_content {
     font-size: 0.8em;
 }
-.info_film_page{
+
+
+/* Страница просмотра фильма */
+
+.info_film_page {
     margin-top: 2%;
     margin-bottom: 4%;
 }
-.info_film_page .label{
+
+.info_film_page .label {
     font-size: 1.2em;
 }
-.info_film_page .value{
+
+.info_film_page .value {
     font-size: 1em;
-    color: #49945a;
+    color: #49945A;
     margin-right: 3%;
 }
-.description_film{
+
+.descriptions_film {
     margin-bottom: 15%;
 }
-.description_film img{
-    float: left;/*чтобы текст вместилася*/
+
+.descriptions_film img{
+    float:left;
     margin-right: 2%;
     border-radius: 5px;
     border: solid 5px #dad7d5;
 }
 
-.footer{
+.reviews {
+    margin-bottom: 4%;
+    font-size: 0.9em;
+}
+
+.reviews .review_name {
+    background-color: #7268AD;
+    color: white;
+    padding: 1%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.reviews .review_text {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+}
+
+.send {
+    margin-bottom: 4%;
+}
+
+.send input[type="text"], textarea {
+    border: solid 1px #C3C3C3;
+    margin-bottom: 2%;
+}
+
+.send input[type="text"]{
+    width: 98%;
+}
+
+.send textarea {
+    width: 624px;
+    height: 200px;
+}
+
+.send input[type="submit"]{
+    background-color: #7268AD;
+    padding: 3%;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+.send_contact input[type="text"] {
+    width: 500px;
+}
+
+.send_contact textarea {
+    width: 516px;
+}
+
+
+
+
+
+
+.footer {
     width: 100%;
-    height: 100%;
+    height: 100px;
     padding: 28px 0 5px 0;
-    text-align: center; /*Позиционирование футера по центру*/
+    text-align: center;
     background-color: darkslateblue;
     color: #a8aa94;
     margin-left: 0px;
@@ -228,15 +305,16 @@ ul.menu li a:hover/*псевдокласс!*/{ /*при наведениии н�
     min-width: 900px;
 }
 
-.footer a{
+.footer a {
     color: #a8aa94;
     text-decoration: none;
 }
+
 .footer a:hover {
     color: #fff;
     text-decoration: none;
 }
-.footer p{
-    padding: 0 0 10px 0;
 
+.footer p {
+    padding: 0 0 10px 0;
 }
